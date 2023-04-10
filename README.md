@@ -1,1 +1,2 @@
-https://ch1sato.github.io/index.html
+https://ch1sato.github.io/profile
+
