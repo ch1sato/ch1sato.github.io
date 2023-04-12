@@ -243,15 +243,15 @@
                         この問題を解決するため，分類性能の評価をZero-Shotで行うことを目指している．
                     <p>学士論文題目「新たなZero-shot CNN評価指標の作成」</p>
 
-                    <h4 class="mt-3">関係する分野</h4>
+                    <h4 class="mt-3">関連研究分野</h4>
                     <ul>
-                        <li>深層学習：CNN、RNN/LSTM、GAN、AutoEncoder/VAE/U-Net等</li>
-                        <li>画像・音声信号処理：雑音除去、スタイル変換、拡散モデル等</li>
-                        <li>非線形システム</li>
-                        <li>分類・回帰問題</li>
-                        <li>クラスタリング</li>
+                        <li>NAS：Zen-NAS， NASWOT， DARTS， ENAS等</li>
+                        <li>AutoML：データの前処理・選定・加工， モデルの構築，モデルの評価（全て自動で行う） </li>
+                        <li>深層学習：CNN，ResNet等</li>
+                        <li>画像分類問題：MNIST，Cifar-10等</li>
+                        <li>モデル圧縮：プルーニング，宝くじ仮説</li>
+                        <li>ニューラルネットワークの表現力</li>
                     </ul>
-                    <p>その他、自然言語処理や強化学習、群知能についても一部研究している。</p>
 
                     <h3 class="mt-3">コーディング</h3>
                     <p>実装経験のあるプログラミング言語・スクリプト言語・マークアップ言語は以下の通りである。</p>
@@ -268,152 +268,7 @@
                     </ul>
                     <p>最近の研究では、TensorFlowよりもPyTorchの使用がメインになっている。</p>
 
-                    <h3 class="mt-5">最近の成果物</h3>
-                    <p class="mt-3 fw-bold">ディスプレイ</p>
-                    <p>自宅にKindle Fire HDをサイネージ代わりに設置。<br>家族の予定・天気・イベント等の情報を取得して表示し、いつでも確認できるようにした。<br>
-                    祖父・祖母には日めくり風カレンダーバージョンも作って提供した。</p>
-                    <p>Web3層アーキテクチャに従ってDB層（MySQL）、AP層（Flask、uWSGI）、Web層（nginx）＋HTTPSフォワードプロキシでシステムを構成した。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/display.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">ディスプレイ</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/daily.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">日めくりカレンダー</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">クローラー</p>
-                    <p>定期的にウェブサイトを巡回して更新情報をスマートフォンに通知するシステム。<br>
-                    大学のサイトへの自動ログインや、データベースを利用したデータ管理の実装を頑張った。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/notify.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">スマホでの通知画面</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">サーバ死活監視</p>
-                    <p>サーバの死活や負荷状況を一括して見れるサイトを制作。<br>
-                    シンプルながらSVGを使ったデザインというこだわり。</p>
-                    <p class="mt-3 fw-bold">鍵管理システム</p>
-                    <p>鍵の貸し出し・返却を管理するためのウェブベースのシステム。<br>
-                    通信制限中でも利用できる軽量さと明瞭な操作感にこだわった。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/key.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">鍵管理システム</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">学園祭公式サイト</p>
-                    <p>2年度に渡り公式サイトを制作。一年目はPHPを頑張って、二年目はWordPressで楽をした。<br>カウントダウンを表示する動的なSVGの生成などにこだわった。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/89th.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;"><a href="https://archive.setagayafes.org/89th/">学園祭サイト（一年目）</a><small class="text-muted"> 注1)</small></p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/90th.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;"><a href="https://archive.setagayafes.org/90th">学園祭サイト（二年目）</a><small class="text-muted"> 注1)</small></p>
-                        </div>
-                    </div>
-                    <p><small class="text-muted">注1）過去のサイトを復元したサイトになりますので、内容が欠損していたり表示が崩れていたりする場合があります。</small></p>
-                    <p class="mt-3 fw-bold">ナレッジベース</p>
-                    <p>研究室内で使用する知識基盤としてのウェブサイトをBookstackを使用して構築した。<br>
-                    学内のサーバにアクセスさせ、かつ技術的制限のあるリバースプロキシを通す必要があったため、複雑なネットワークを構成することになった。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/labokb.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">ナレッジベース</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/proxy.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">無理やり繋げたネットワーク</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">研究室ポータル（開発凍結中）</p>
-                    <p>研究室のメンバーのためのポータルサイト（忙しくなったため開発は凍結中）。<br>
-                    大学ポータル等の閲覧・更新通知、Webメール、イベント管理、名簿、登学報告、サーバ使用率表示、写真アルバム、ファイルストレージなどを実装予定。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/lab-portal.jpg" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">研究室ポータル</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">リアルタイム地震情報</p>
-                    <p>緊急地震速報・震度速報・リアルタイム震度や、揺れが来るまでの時間を統合的に表示するサイトを制作（個人利用目的）。<br>
-                    即時性が求められるので、サーバ側とクライアント側でそれぞれ非同期処理に取り組んだ。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/eew.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">リアルタイム地震情報</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">研究室 在室状況</p>
-                    <p>研究室のメンバーが、学生証を読み取って在室通知をするシステムを作ってくれたので、そのシステムのデータを読み取ってリアルタイムに表示するディスプレイを作成。<br>
-                    GUIはPythonのTkinterを使用。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/lab-stay.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">表示画面</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/lab-stay.jpg" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">設置した様子</p>
-                        </div>
-                    </div>
-                    <p class="mt-3 fw-bold">LEDディスプレイ</p>
-                    <p>Raspberry PiとLEDディスプレイを使って、動画をリアルタイムで再生するシステム。<br>
-                    簡単な電子回路ならできる。</p>
-                    <p class="mt-3 fw-bold">動画一括処理ツール</p>
-                    <p>Google Spreadsheetから読み込んだデータをもとにffmpeg等を利用して文字埋め込みやアップコンバートなどを自動的に行うツール。</p>
 
-                    <h3 class="mt-5">特技</h3>
-                    <h5>Adobe Illustratorを使用したDTPデザイン制作</h5>
-                    <p>第89回東京都市大学世田谷祭のパンフレット制作の経験があるなど、バックエンドだけでなくフロントエンドの開発にも自信がある。</p>
-                    <h5>サンプル</h5>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/flyer2.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">委員募集チラシ</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="img/brochure.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">学園祭パンフレット</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="img/poster.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">委員会ポスター</p>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <img src="img/flyer3.jpg" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;"><a href="img/townplus.pdf">配達地域指定郵便チラシ（PDF）</a></p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="img/poster2.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">知識基盤ポスター</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="img/flyer.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">四工大PJフライヤー</p>
-                        </div>
-                        <div class="col-md-3 col-6">
-                            <img src="img/guidebook.png" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;"><a href="img/guidebook.pdf">学園祭ガイドブック（PDF）</a></p>
-                        </div>
-                    </div>
-
-                    <h3 class="mt-5">その他</h3>
-                    <h5>デスク周りの写真</h5>
-                    <p>4画面に囲まれながら生活している。壁紙などカラフル過ぎるように見えるが、実際にこのカラフルなデザインが自分の中での流行なのでこの中で過ごしている。<br>
-                    ディスプレイx4、マイク、5.1chスピーカー、ヘッドホン、iPad、ペンタブ、HHKB、Kindleディスプレイ（前述）、ルータ、スイッチ（上の方にチラッと見える）、プリンタ（右の方にチラッと見える）、Qi充電器がある。<br>
-                    また、PCにはテレビ映像入力がありPC画面からテレビを見れる。</p>
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <img src="img/desk.jpg" style="width: 100%; margin: 8px;">
-                            <p style="text-align: center;">デスク周り</p>
-                        </div>
-                    </div>
-                </section>
 
                 <section id="link">
                     <h2 class="sideline">リンク</h2>
