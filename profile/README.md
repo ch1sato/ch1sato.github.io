@@ -1,2 +1,2 @@
-https://ch1sato.github.io/profile
+https://ch1sato.github.io/profile/
 
